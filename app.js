@@ -14,9 +14,9 @@ app.get('/', (req, res) => {
 
 function connect() {
 	return mysql.createConnection({
-		host: 'localhost',
-		user: 'root',
-		password: 'yqwoshuai520',
+		host: constant.dbHost,
+		user: constant.dbUser,
+		password: constant.dbPwd,
 		database: 'book'
 	})
 }
